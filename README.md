@@ -31,3 +31,4 @@ What’s inside the project folder?
     index.html — The main webpage.
     style.css — All the styles that make the board and pieces look nice.
     script.js — The game logic and animation code.
+    gameplay image — Shows how the game is going to look like when launching it. 
