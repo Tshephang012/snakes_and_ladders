@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(10, 40px);
+  grid-template-rows: repeat(10, 40px);
+  margin: 20px auto;
+  width: 400px;
+  border: 2px solid #333;
+  position: relative;
+}
+
+.cell {
+  border: 1px solid #ddd;
+  position: relative;
+  font-size: 10px;
+  color: #888;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 2px;
+}
+
+.player1,
+.player2 {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.player1 {
+  background-color: red;
+}
+
+.player2 {
+  background-color: blue;
+}
+
+#dice-display {
+  font-size: 40px;
+  margin: 10px;
+}
+
+#controls {
+  margin-top: 20px;
+}

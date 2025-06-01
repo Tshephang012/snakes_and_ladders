@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Snakes and Ladders</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Snakes and Ladders</h1>
+
+  <div style="position: relative; width: 400px; margin: auto;">
+    <svg
+      id="svg-lines"
+      width="400"
+      height="400"
+      style="position: absolute; top: 0; left: 0; z-index: 1;"
+    ></svg>
+    <div id="game-board" style="z-index: 2;"></div>
+  </div>
+
+  <div id="controls">
+    <p id="turn">Player 1's turn</p>
+    <div id="dice-display">🎲</div>
+    <button onclick="rollDice()">Roll Dice</button>
+    <p id="dice-result"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
